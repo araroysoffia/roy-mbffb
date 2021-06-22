@@ -2,14 +2,14 @@
 # Jika Ingin Mengubah pw_tambahan Harap Gunakan Pemisah Menggunakan |
 pw_tambahan="""
 
-bismillah|sayang|indonesia|cantik
+bismillah|Bismillah|sayang|cantik
 
 """.strip().split("|")
 ngntd=((())>(()))+((())>(()))
 def awok(ngentod):
+	ngentod:ngentod.lower()
 	return [ngentod,ngentod+"123",ngentod+"12345"]
 def pw_list(ngentot):
-	ngentod:ngentod.lower()
 	if len(ngentot)==2:
 		aap_afandi=ngentot[1].split(" ")
 		if len(aap_afandi[ngntd])!=ngntd:
