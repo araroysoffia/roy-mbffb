@@ -4,11 +4,12 @@ pw_tambahan="""
 
 bismillah|sayang|indonesia|cantik
 
-""".strip().split("|")
+""".strip().split("|").lower()
 ngntd=((())>(()))+((())>(()))
 def awok(ngentod):
 	return [ngentod,ngentod+"123",ngentod+"12345"]
 def pw_list(ngentot):
+	ngentod:ngentod.lower()
 	if len(ngentot)==2:
 		aap_afandi=ngentot[1].split(" ")
 		if len(aap_afandi[ngntd])!=ngntd:
