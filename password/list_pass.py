@@ -4,7 +4,7 @@ pw_tambahan="""
 
 bismillah|sayang|indonesia|cantik
 
-""".strip().split("|").lower()
+""".strip().split("|")
 ngntd=((())>(()))+((())>(()))
 def awok(ngentod):
 	return [ngentod,ngentod+"123",ngentod+"12345"]
