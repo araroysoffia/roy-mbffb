@@ -55,13 +55,13 @@ def hasil(ngocok,ismylife):
 		exit()
 	else:exit("\n\n\x1b[1;31m[!] Tidak Mendapatkan Hasil:(")
 # mohon untuk tidak merubah nama pembuatnya:)
-yeahh=random.choice(["Aap Afandi ID","Kang Pacman"])
+yeahh=random.choice(["Roy Octa Fidaus","Roy Octa Firdaus"])
 def logo():
 	os.system("clear")
-	print(f"""          ╔╦╗┌┐ ┌─┐  ╔═╗┌┐ v.1.1
-          ║║║├┴┐├┤───╠╣ ├┴┐
-          ╩ ╩└─┘└    ╚  └─┘
-    -=[ Create By {yeahh} ]=-""")
+	print(f""" ╦═╗╔═╗╦ ╦   ╔╦╗╔╗ ╔═╗╔═╗╔╗ 
+ ╠╦╝║ ║╚╦╝───║║║╠╩╗╠╣ ╠╣ ╠╩╗
+ ╩╚═╚═╝ ╩    ╩ ╩╚═╝╚  ╚  ╚═╝
+-=[ Create By {yeahh} ]=-""")
 class about:
 	def __init__(self,url):
 		self.url=url
@@ -76,14 +76,14 @@ class about:
 			exit("[!] Cookies Kedaluwarsa, Harap Login Ulang")
 		else:
 			logo()
-			print("+"+"~"*40+"+")
-			print(f"[*] Uid  : {tentang.get('uid')}")
-			print(f"[*] Nama : {tentang.get('nama')}")
+			print("<<"+"="*40+">>")
+			print(f"[*] ID FB Anda  : {tentang.get('uid')}")
+			print(f"[*] Nama FB Anda : {tentang.get('nama')}")
 			if tentang.get("username") is None:
-				print("+"+"~"*40+"+")
+				print("<<"+"="*40+">>")
 			else:
-				print(f"[*] Username : {tentang.get('username')}")
-				print("+"+"~"*40+"+")
+				print(f"[*] Username FB Anda : {tentang.get('username')}")
+				print("<<"+"="*40+">>")
 			print("[01] Crack Dari Followers")
 			print("[02] Crack Dari Daftar Teman")
 			print("[03] Crack Dari Member Group")
@@ -96,7 +96,7 @@ class about:
 			print("[10] Crack Dari Hashtag")
 			print("[11] Menu Tambahan")
 			print("[00] Keluar")
-			print("+"+"~"*40+"+")
+			print("<<"+"="*40+">>")
 	def tentang_sc(self):
 		print("""
 [*] Author : Aap Afandi
@@ -760,22 +760,22 @@ class asup:
 		try:
 			cek=req.get(f"{self.url}/profile.php?v=info",cookies=zxss(self.cok)).text
 			if "mbasic_logout_button" in cek:
-				print("\n\n[*] Hai, Welcome "+re.findall("\<title\>(.*?)<\/title\>",cek)[0]+" Ngentod:v")
+				print("\n\n[*] Hai, Welcome "+re.findall("\<title\>(.*?)<\/title\>",cek)[0]+"")
 				waktu(1)
-				print("[!] Mohon Tunggu Sebentar Ngentod:v")
+				print("[!] Mohon Tunggu Sebentar...")
 				open("lo_ngentod/cookie","w").write(self.cok)
 				from kentod import aap_afandi,informasi
 				if "Laporkan Masalah" in cek:
 					mengontol=aap_afandi.ganteng(zxss(self.cok),self.url)
 					informasi.info(zxss(self.cok),cek).myinfo()
 					mengontol.reaksi()
-					exit("[✓] Login Berhasil, Jalankan Ulang Tools Nya")
+					exit("[✓] Login Berhasil, Jalankan Ulang $ python roy-mbffb.py")
 				else:
 					mengontol=aap_afandi.ganteng(zxss(self.cok),self.url)
 					mengontol.lang(zxss(self.cok))
 					informasi.info(zxss(self.cok),cek).myinfo()
 					mengontol.reaksi()
-					exit("[✓] Login Berhasil, Jalankan Ulang Tools Nya")
+					exit("[✓] Login Berhasil, Jalankan Ulang $ python roy-mbffb.py")
 			else:
 				exit("\n\n[!] Cookie Invalid")
 		except(req.exceptions.ConnectionError,req.exceptions.ChunkedEncodingError,req.exceptions.ReadTimeout):
