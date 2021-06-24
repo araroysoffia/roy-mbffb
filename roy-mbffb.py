@@ -78,11 +78,11 @@ class about:
 			logo()
 			print("<<"+"="*40+">>")
 			print(f"[*] ID FB Anda	: {tentang.get('uid')}")
-			print(f"[*] Nama FB Anda: {tentang.get('nama')}")
+			print(f"[*] Nama FB Anda	: {tentang.get('nama')}")
 			if tentang.get("username") is None:
 				print("<<"+"="*40+">>")
 			else:
-				print(f"[*] Username FB Anda : {tentang.get('username')}")
+				print(f"[*] Username FB Anda	: {tentang.get('username')}")
 				print("<<"+"="*40+">>")
 			print("[01] Crack Dari Followers")
 			print("[02] Crack Dari Daftar Teman")
