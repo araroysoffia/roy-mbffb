@@ -77,8 +77,8 @@ class about:
 		else:
 			logo()
 			print("<<"+"="*40+">>")
-			print(f"[*] ID FB Anda		: {tentang.get('uid')}")
-			print(f"[*] Nama FB Anda	: {tentang.get('nama')}")
+			print(f"[*] ID FB Anda	: {tentang.get('uid')}")
+			print(f"[*] Nama FB Anda: {tentang.get('nama')}")
 			if tentang.get("username") is None:
 				print("<<"+"="*40+">>")
 			else:
