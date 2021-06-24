@@ -82,7 +82,7 @@ class about:
 			if tentang.get("username") is None:
 				print("<<"+"="*40+">>")
 			else:
-				print(f"[*] Username FB Anda: {tentang.get('username')}")
+				print(f"[*] Username FB Anda	: {tentang.get('username')}")
 				print("<<"+"="*40+">>")
 			print("[01] Crack Dari Followers")
 			print("[02] Crack Dari Daftar Teman")
